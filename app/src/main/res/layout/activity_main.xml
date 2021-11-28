@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="UselessParent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <ImageButton
+                android:id="@+id/imgbtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_baseline_settings_24"
+                android:contentDescription="@string/app_name"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/Adr"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:fontFamily="@font/regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/address"
+        android:textColor="#826C6D"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="188dp" />
+
+</LinearLayout>

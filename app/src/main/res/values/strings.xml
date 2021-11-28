@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">신호등 안내 서비스</string>
+    <string name="data">원본 데이터</string>
+    <string name="address">address</string>
+    <string name="OnOff">알림</string>
+    <string name="Service">서비스</string>
+    <string name="rec">데이터</string>
+    <string name="load">Prevent Smombie Accident</string>
+    <string name="set1">알림의 켜거나 끌 수 있습니다.</string>
+    <string name="set2">앱을 종료하여도 알림을 받을수 있습니다.</string>
+</resources>
